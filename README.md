@@ -17,10 +17,10 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/imbalanced_data.png "Imbalanced Data"
-[image2]: ./examples/balanced_data.png "Balanced Data"
-[image3]: ./examples/original_img.png "Original Image"
-[image4]: ./examples/image_preprocessing.png "Preprocessed Image Possibilities"
+[image1]: ./imbalanced_data.png "Imbalanced Data"
+[image2]: ./balanced_data.png "Balanced Data"
+[image3]: ./original_img.png "Original Image"
+[image4]: ./image_preprocessing.png "Preprocessed Image Possibilities"
 [image6]: ./test-images/11_rigtoffway_atnextintersection_32x32x3.jpg "Traffic Sign 1"
 [image7]: ./test-images/12_priority_road_32x32x3.jpg "Traffic Sign 2"
 [image8]: ./test-images/17_noentry_32x32x3.jpg "Traffic Sign 3"
