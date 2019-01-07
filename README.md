@@ -18,14 +18,13 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./imbalanced_data.png "Imbalanced Data"
-[image2]: ./balanced_data.png "Balanced Data"
-[image3]: ./original_img.png "Original Image"
-[image4]: ./image_preprocessing.png "Preprocessed Image Possibilities"
-[image6]: ./test-images/11_rigtoffway_atnextintersection_32x32x3.jpg "Traffic Sign 1"
-[image7]: ./test-images/12_priority_road_32x32x3.jpg "Traffic Sign 2"
-[image8]: ./test-images/17_noentry_32x32x3.jpg "Traffic Sign 3"
-[image9]: ./test-images/31_wildanimalscrossing_32x32x3.jpg "Traffic Sign 4"
-[image10]: ./test-images/34_turn_left_ahead.jpg "Traffic Sign 5"
+[image3]: ./30.png "Original Image"
+[image4]: ./30s.png "Preprocessed Image Possibilities"
+[image6]: ./test_images/11_rigtoffway_atnextintersection_32x32x3.jpg "Traffic Sign 1"
+[image7]: ./test_images/12_priority_road_32x32x3.jpg "Traffic Sign 2"
+[image8]: ./test_images/17_noentry_32x32x3.jpg "Traffic Sign 3"
+[image9]: ./test_images/31_wildanimalscrossing_32x32x3.jpg "Traffic Sign 4"
+[image10]: ./test_images/34_turn_left_ahead.jpg "Traffic Sign 5"
 [image11]: ./LeNet.png	"LeNet Architecture"
 [image12]: ./LeCun_Sermanet.png "LeCun_Sermanet Architecture"
 [image13]: ./softmax_probs.png "Softmax Probabilities"
@@ -55,7 +54,6 @@ signs data set:
 Here is an exploratory visualization of the data set. It is a bar chart showing that the data came extremely imbalanced across all traffic sign types, subsequently to be balanced after the image preprocessing step.
 
 ![alt text][image1]
-![alt text][image2]
 
 ### Design and Test a Model Architecture
 
@@ -82,7 +80,7 @@ My final model, inspired by LeCun-Sermanet's implementation for this problem, co
 | Input         		| 32x32x1 Grayscale image   							| 
 | Convolution 5x5     	| 1x1 stride, same padding, outputs 28x28x6 	|
 | RELU					|												|
-| Max pooling	 - Layer 1    	| 2x2 stride,  outputs 14x14x6 				|
+| Max pooling	- Layer 1    	| 2x2 stride,  outputs 14x14x6 				|
 | Convolution 5x5	    | 1x1 stride, same padding, outputs 10x10x16				|
 | RELU					|												|
 | Max pooling	- Layer 2    	| 2x2 stride,  outputs 5x5x16 				|
@@ -113,7 +111,8 @@ LeCun-Sermanet (15 epochs):
 
 
 The first architecture I used was the LeNet model, but since I wasn't achieving high enough accuracy, I decided to switch to a LeCun-Sermanet architecture, which adds an additional convolutional layers and concatenates the results with an earlier layer before sending those weights through a softmax. 
-
+![alt text][image12]
+![alt text][image13]
 I found that my initial pick of a LeNet architecture just wasn't capturing enough of the information, leading to weak fits on the test data. The LeCun-Sermanet architecture is clearly more powerful, going deeper than the LeNet architecture but avoiding overfitting by using an earlier layers' weights as well.
 
 As my training accuracy is not extremely high, indicating overfitting, I would like to conitinue to add depth to this model with more convolutions to deepen my model's 'experience' and using dropout to protect against overfitting. 
