@@ -111,8 +111,11 @@ LeCun-Sermanet (15 epochs):
 
 
 The first architecture I used was the LeNet model, but since I wasn't achieving high enough accuracy, I decided to switch to a LeCun-Sermanet architecture, which adds an additional convolutional layers and concatenates the results with an earlier layer before sending those weights through a softmax. 
+Original LeNet Architecture:
 ![alt text][image11]
+LeCun - Sermanet Architecture:
 ![alt text][image12]
+
 I found that my initial pick of a LeNet architecture just wasn't capturing enough of the information, leading to weak fits on the test data. The LeCun-Sermanet architecture is clearly more powerful, going deeper than the LeNet architecture but avoiding overfitting by using an earlier layers' weights as well.
 
 As my training accuracy is not extremely high, indicating overfitting, I would like to conitinue to add depth to this model with more convolutions to deepen my model's 'experience' and using dropout to protect against overfitting. 
