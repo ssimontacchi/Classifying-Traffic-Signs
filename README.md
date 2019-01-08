@@ -32,7 +32,7 @@ The goals / steps of this project are the following:
 
 ### Writeup / README
 
-Here is a link to my [project code]https://github.com/ssimontacchi/Classifying-Traffic-Signs/blob/master/Traffic_Sign_Classifier.ipynb)
+Here is a link to my [project code](https://github.com/ssimontacchi/Classifying-Traffic-Signs/blob/master/Traffic_Sign_Classifier.ipynb).
 
 ### Data Set Summary & Exploration
 
@@ -135,3 +135,5 @@ The model was able to correctly guess 5 of the 5 traffic signs, which gives an a
 #### 3. Softmax Probabilities for each Prediction
 
 ![alt text][image13]
+
+As you can see, my model was able to predict each of these new images accurately and with nearly 100% confidence.
